@@ -1,9 +1,12 @@
 import React from "react";
 import { useContext, useEffect, useState } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../provders/global";
 import styles from "./LandingPage.module.css";
 
 export const LandingPage = () => {
-  const [name, setName] = useState("");
+  const { name, setName } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   return (
     <div className={styles.wrapper}>
@@ -16,7 +19,7 @@ export const LandingPage = () => {
             onChange={(e) => setName(e.target.value)}
           />
 
-          <button onClick={(e) => setName(name)}>play</button>
+          <button onClick={(e) => navigate("game")}>play</button>
 
           <p>{name}</p>
         </form>
