@@ -1,20 +1,16 @@
 import React from "react";
 import { useContext, useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import { LandingPage } from "./components/LandingPage/LandingPage";
 
 function App() {
-  const [name, setName] = useState("");
-
   return (
-    <div className="wrapper">
-      <div className="container">
-        <h1>Wordcloud Game</h1>
-        <form>
-          <input type="text" placeholder="Enter your nickname here..." />
-          <button>play</button>
-        </form>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
