@@ -1,65 +1,50 @@
-export default API: {
-    question: "select animals",
-    "all_words": [
-    "hole",
-    "sofa",
-    "pear",
-    "tiger",
-    "oatmeal",
-    "square",
-    "nut",
-    "cub",
-    "shirt",
-    "tub",
-    "passenger",
-    "cow"
-    ],
-    "good_words": [
-    "tiger",
-    "cow",
-    ]
+export const options = [
+    { 
+    id: 1,
+    answer: "hole",
+    },
+    { 
+    id: 2,
+    answer: "sofa",
+    },
+    { 
+    id: 3,
+    answer: "pear",
+    },
+    { 
+    id: 4,
+    answer: "tiger",
+    },
+    { 
+    id: 5,
+    answer: "oatmeal",
+    },
+    { 
+    id: 6,
+    answer: "square",
+    },
+    { 
+    id: 7,
+    answer: "nut",
+    },
+    { 
+    id: 8,
+    answer: "cub",
+    },
+    { 
+    id: 9,
+    answer: "shirt",
+    },
+    { 
+    id: 10,
+    answer: "tub",
+    },
+    { 
+    id: 11,
+    answer: "passenger",
+    },
+    { 
+    id: 12,
+    answer: "cow",
     }
-    // {
-    // question: "select colors",
-    // "all_words": [
-    // "jeans",
-    // "existence",
-    // "ink",
-    // "red",
-    // "blue",
-    // "yellow",
-    // "laugh",
-    // "behavior",
-    // "expansion",
-    // "white",
-    // "black",
-    // "cakes"
-    
-    // ],
-    // "good_words": [
-    // "red",
-    // "blue",
-    // "yellow",
-    // "white",
-    // "black"
-    // ]
-    // }
-    // {
-    // question: "select vehicles", "all_words":
-    // [
-    // "belief",
-    // "wire",
-    // "car",
-    // "bus",
-    // "star",
-    // "river",
-    // "hat",
-    // "skirt",
-    // "train",
-    // ],
-    // "good_words": [
-    // "car",
-    // "bus",
-    // "train"
-    // ]
-    // }
+];
